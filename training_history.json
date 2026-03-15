@@ -1,0 +1,60 @@
+{
+  "resume_job_matcher": {
+    "model_type": "RandomForest",
+    "features": [
+      "experience_years",
+      "skill_match",
+      "experience_match",
+      "education_score",
+      "location_match"
+    ],
+    "performance": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "all_results": {
+      "RandomForest": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "GradientBoosting": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "LogisticRegression": {
+        "accuracy": 0.9975,
+        "precision": 0.9975,
+        "recall": 1.0,
+        "f1": 0.9987484355444305
+      },
+      "MLP": {
+        "accuracy": 0.9975,
+        "precision": 0.9975,
+        "recall": 1.0,
+        "f1": 0.9987484355444305
+      }
+    },
+    "training_samples": 1600,
+    "test_samples": 400
+  },
+  "skill_recommender": {
+    "model_type": "RandomForest",
+    "accuracy": 0.38333333333333336,
+    "num_skills": 29,
+    "training_samples": 960,
+    "test_samples": 240
+  },
+  "text_classifier": {
+    "model_type": "RandomForest + TF-IDF",
+    "accuracy": 0.455,
+    "feature_count": 1000,
+    "training_samples": 800,
+    "test_samples": 200
+  }
+}
